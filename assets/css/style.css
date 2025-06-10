@@ -111,3 +111,52 @@ body {
   background: var(--color-primario);
   color: var(--color-secundario);
 }
+.timeline {
+  list-style: none;
+  padding: 0;
+  position: relative;
+}
+
+.timeline li {
+  margin-bottom: 2rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.timeline li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+  width: 10px;
+  height: 10px;
+  background: var(--color-primario);
+  border-radius: 50%;
+}
+
+.timeline li .period {
+  display: block;
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.timeline h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: var(--color-primario);
+}
+
+.timeline p {
+  margin: 0.5rem 0;
+}
+
+.timeline li ul {
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+}
+
+.timeline li ul li {
+  list-style: disc;
+  margin-bottom: 0.25rem;
+}
